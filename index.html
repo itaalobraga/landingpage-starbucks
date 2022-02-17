@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Starbucks Page</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/7d6f1dcf72.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <header id="header">
+            <div class="logo">
+                <a href="#"><img src="img/logo.png" alt="" /></a>
+            </div>
+            <i id="btnMenu" class="fas fa-bars" onclick="toogleMenu()"></i>
+            <nav id="menu">
+                <a href="#">Home</a>
+                <a href="#">Menu</a>
+                <a href="#">What's New</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        <main id="main">
+            <section class="container">
+                <div class="text">
+                    <h2>
+                        It's not just Coffe<br />It's <span>Starbucks</span>
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Quidem, dicta aperiam earum veniam iste hic, iure
+                        explicabo, aliquam impedit facere rerum fugit alias.
+                        Expedita officiis quidem corrupti ad, error illo.
+                    </p>
+                    <input type="button" value="LEARN MORE" />
+                </div>
+                <div class="imgmain">
+                    <img src="img/img1.png" alt="" id="cup" />
+                </div>
+            </section>
+        </main>
+        <div class="social-media">
+            <img src="img/facebook.png" alt="" />
+            <img src="img/instagram.png" alt="" />
+            <img src="img/twitter.png" alt="" />
+        </div>
+        <div class="thumbs">
+            <img
+                src="img/thumb1.png"
+                alt=""
+                id="thumb-green"
+                onclick="colorGreen()"
+            />
+            <img
+                src="img/thumb2.png"
+                alt=""
+                id="thumb-pink"
+                onclick="colorPink()"
+            />
+            <img
+                src="img/thumb3.png"
+                alt=""
+                id="thumb-purple"
+                onclick="colorPurple()"
+            />
+        </div>
+        <div id="circle-container" class="circle"></div>
+        <script src="js/menu.js"></script>
+        <script src="js/tooglecolor.js"></script>
+        <footer id="footer">
+            <p>Desenvolvido por Ítalo Braga</p>
+        </footer>
+    </body>
+</html>
